@@ -6,15 +6,15 @@
   <br />
   <p>
     <a href="https://discord.gg/YM9KxHpcWb"><img src="https://img.shields.io/discord/863339994000654346?color=5865F2&logo=discord&logoColor=white" alt="Discord server" /></a>
-    <a href="https://www.npmjs.com/package/discordly"><img src="https://img.shields.io/npm/v/discordly.svg?maxAge=3600" alt="NPM version" /></a>
-    <a href="https://www.npmjs.com/package/discordly"><img src="https://img.shields.io/npm/dt/discordly.svg?maxAge=3600" alt="NPM downloads" /></a>
+    <a href="https://www.npmjs.com/package/lestige"><img src="https://img.shields.io/npm/v/lestige.svg?maxAge=3600" alt="NPM version" /></a>
+    <a href="https://www.npmjs.com/package/lestige"><img src="https://img.shields.io/npm/dt/lestige.svg?maxAge=3600" alt="NPM downloads" /></a>
   </p>
 </div>
 
 
 ## Important
-> Discordly is still in development so it's only able to do some things. <br>
-> Discordly also supports all versions of nodejs that are above 10.x.
+> Lestige is still in development so it's only able to do some things. <br>
+> Lestige also supports all versions of nodejs that are above 16.x.
 
 ## Update
 
@@ -36,8 +36,8 @@ discordly is a powerful [Node.js](https://nodejs.org) module that allows you to 
 
 
 ```js
-const {Client, intents} = require('lestige')
-const client = new Client({intents: [intents.Flags.GUILDS, intents.Flags.GUILD_MESSAGES, intents.Flags.GUILD_MESSAGE_REACTIONS]})
+const {Client, Intents} = require('lestige')
+const client = new Client({intents: [Intents.Flags.GUILDS, Intents.Flags.GUILD_MESSAGES, Intents.Flags.GUILD_MESSAGE_REACTIONS]})
 
 client.on('ready', () => {
   console.log(`${client.me.tag} is ready.`)
