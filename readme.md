@@ -1,7 +1,7 @@
 <div align="center">
   <br />
   <p>
-    <a href="https://discord.gg/YM9KxHpcWb"><img src="https://cdn.discordapp.com/attachments/893649196169691196/893900788588490782/Discordly.png" width="546" alt="discordly" /></a>
+    <a href="https://discord.gg/YM9KxHpcWb"><h1>Image soon!</h1></a>
   </p>
   <br />
   <p>
@@ -36,18 +36,17 @@ discordly is a powerful [Node.js](https://nodejs.org) module that allows you to 
 
 
 ```js
-const {Client, intents} = require('discordly')
+const {Client, intents} = require('lestige')
 const client = new Client({intents: [intents.Flags.GUILDS, intents.Flags.GUILD_MESSAGES, intents.Flags.GUILD_MESSAGE_REACTIONS]})
 
 client.on('ready', () => {
-  console.log(`${client.tag} is ready.`)
+  console.log(`${client.me.tag} is ready.`)
 })
 
 client.on('message', message => {
     if(message.author.bot) return;
 
     if(message.content == '!help'){
-      /*  const embed = new Discordly.RichEmbed()  - Coming soon.*/
       message.channel.say('I am here to help :D')
     }
 })
